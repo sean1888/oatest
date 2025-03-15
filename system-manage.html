@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OA系统 - 系统管理</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/system.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="navbar">
+        <a href="main.html" class="navbar-brand">企业办公自动化系统</a>
+        <div class="navbar-menu">
+            <div class="navbar-item notification">
+                <span class="notification-icon">📣</span>
+                <span class="notification-badge">3</span>
+            </div>
+            <div class="navbar-item user-info">
+                <span class="user-name">管理员</span>
+                <div class="user-dropdown">
+                    <a href="personal.html">个人中心</a>
+                    <a href="index.html">退出登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 侧边栏菜单 -->
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <div class="sidebar-item">首页</div>
+            <div class="sidebar-item">待办任务</div>
+            <div class="sidebar-item">已办任务</div>
+            <div class="sidebar-item">通知公告</div>
+            <div class="sidebar-item">个人中心</div>
+            <div class="sidebar-item">用户管理</div>
+            <div class="sidebar-item active">系统管理</div>
+        </div>
+    </div>
+
+    <!-- 主内容区域 -->
+    <div class="main-content">
+        <!-- 页面标题 -->
+        <div class="page-header">
+            <h2>系统管理</h2>
+            <p>管理系统设置和配置</p>
+        </div>
+
+        <!-- 选项卡导航 -->
+        <div class="tabs">
+            <div class="tab-item active" data-tab="role">角色管理</div>
+            <div class="tab-item" data-tab="module">模块设置</div>
+            <div class="tab-item" data-tab="email">邮箱设置</div>
+            <div class="tab-item" data-tab="log">系统日志</div>
+        </div>
+
+        <!-- 选项卡内容 -->
+        <div class="tab-content">
+            <!-- 角色管理选项卡 -->
+            <div class="tab-pane active" id="role-tab">
+                <div class="card">
+                    <div class="card-header">
+                        <span>角色列表</span>
+                        <button class="btn btn-primary btn-sm" id="addRoleBtn">添加角色</button>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>角色名称</th>
+                                    <th>角色描述</th>
+                                    <th>创建时间</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>超级管理员</td>
+                                    <td>拥有系统所有权限</td>
+                                    <td>2023-01-01</td>
+                                    <td class="action-buttons">
+                                        <button class="btn btn-primary btn-sm">编辑</button>
+                                        <button class="btn btn-danger btn-sm" disabled>删除</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>部门经理</td>
+                                    <td>管理部门内的任务和人员</td>
+                                    <td>2023-01-10</td>
+                                    <td class="action-buttons">
+                                        <button class="btn btn-primary btn-sm">编辑</button>
+                                        <button class="btn btn-danger btn-sm">删除</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>普通员工</td>
+                                    <td>基本的系统使用权限</td>
+                                    <td>2023-01-15</td>
+                                    <td class="action-buttons">
+                                        <button class="btn btn-primary btn-sm">编辑</button>
+                                        <button class="btn btn-danger btn-

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OA系统 - 主页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="navbar">
+        <a href="main.html" class="navbar-brand">企业办公自动化系统</a>
+        <div class="navbar-menu">
+            <div class="navbar-item notification">
+                <span class="notification-icon">📣</span>
+                <span class="notification-badge">3</span>
+            </div>
+            <div class="navbar-item user-info">
+                <span class="user-name">管理员</span>
+                <div class="user-dropdown">
+                    <a href="personal.html">个人中心</a>
+                    <a href="index.html">退出登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 侧边栏菜单 -->
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <div class="sidebar-item active">首页</div>
+            <div class="sidebar-item">待办任务</div>
+            <div class="sidebar-item">已办任务</div>
+            <div class="sidebar-item">通知公告</div>
+            <div class="sidebar-item">个人中心</div>
+            <div class="sidebar-item">用户管理</div>
+            <div class="sidebar-item">系统管理</div>
+        </div>
+    </div>
+
+    <!-- 主内容区域 -->
+    <div class="main-content">
+        <!-- 欢迎信息 -->
+        <div class="welcome-section">
+            <h2>欢迎使用企业办公自动化系统</h2>
+            <p>今天是 <span id="current-date"></span>，祝您工作愉快！</p>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="content-section">
+            <!-- 任务处理模块 -->
+            <div class="card task-card">
+                <div class="card-header">任务处理</div>
+                <div class="card-body">
+                    <div class="task-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">待办任务</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">进行中</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">28</div>
+                            <div class="stat-label">已完成</div>
+                        </div>
+                    </div>
+                    <div class="task-list">
+                        <div class="task-item">
+                            <div class="task-title">员工入职审批</div>
+                            <div class="task-info">
+                                <span class="task-time">2023-06-15</span>
+                                <span class="task-status urgent">紧急</span>
+                            </div>
+                        </div>
+                        <div class="task-item">
+                            <div class="task-title">季度报表审核</div>
+                            <div class="task-info">
+                                <span class="task-time">2023-06-18</span>
+                                <span class="task-status normal">普通</span>
+                            </div>
+                        </div>
+                        <div class="task-item">
+                            <div class="task-title">项目进度汇报</div>
+                            <div class="task-info">
+                                <span class="task-time">2023-06-20</span>
+                                <span class="task-status normal">普通</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-more">
+                        <a href="#">查看更多</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 通知信息模块 -->
+            <div class="card notice-card">
+                <div class="card-header">通知信息</div>
+                <div class="card-body">
+                    <div class="notice-list">
+                        <div class="notice-item">
+                            <div class="notice-title">关于公司年度体检安排的通知</div>
+                            <div class="notice-info">
+                                <span class="notice-time">2023-06-10</span>
+                                <span class="notice-from">人力资源部</span>
+                            </div>
+                        </div>
+                        <div class="notice-item">
+                            <div class="notice-title">端午节放假安排</div>
+                            <div class="notice-info">
+                                <span class="notice-time">2023-06-08</span>
+                                <span class="notice-from">行政部</span>
+                            </div>
+                        </div>
+                        <div class="notice-item">
+                            <div class="notice-title">新版OA系统上线通知</div>
+                            <div class="notice-info">
+                                <span class="notice-time">2023-06-05</span>
+                                <span class="notice-from">信息技术部</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-more">
+                        <a href="#">查看更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="js/main.js"></script>
+</body>
+</html>

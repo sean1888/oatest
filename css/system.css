@@ -1,0 +1,106 @@
+/* 系统管理页面样式 */
+
+/* 页面标题样式 */
+.page-header {
+    background-color: white;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-header h2 {
+    color: #001529;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.page-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* 选项卡导航样式 */
+.tabs {
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.tab-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    white-space: nowrap;
+}
+
+.tab-item:hover {
+    color: #1890ff;
+}
+
+.tab-item.active {
+    color: #1890ff;
+    border-bottom-color: #1890ff;
+}
+
+/* 选项卡内容区域 */
+.tab-content {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-pane {
+    display: none;
+    padding: 20px;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+/* 卡片头部带按钮样式 */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 操作按钮样式 */
+.action-buttons {
+    white-space: nowrap;
+}
+
+.btn-sm {
+    padding: 2px 8px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+/* 表单样式调整 */
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-section-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab-item {
+        flex: 1;
+        text-align: center;
+        padding: 10px;
+    }
+}
