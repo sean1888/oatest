@@ -36,6 +36,7 @@
             <div class="sidebar-item">个人中心</div>
             <div class="sidebar-item">用户管理</div>
             <div class="sidebar-item active">系统管理</div>
+            <div class="sidebar-item"><a href="labor-fee.html">劳务费列表</a></div>
         </div>
     </div>
 
@@ -49,16 +50,15 @@
 
         <!-- 选项卡导航 -->
         <div class="tabs">
-            <div class="tab-item active" data-tab="role">角色管理</div>
-            <div class="tab-item" data-tab="module">邮件模版设置</div>
-            <div class="tab-item" data-tab="email">邮箱设置</div>
-            <div class="tab-item" data-tab="log">系统日志</div>
+            <div class="tab-item " data-tab="role">角色管理</div>
+            <div class="tab-item " data-tab="module">邮件模版设置</div>
+            <div class="tab-item active" data-tab="email">邮箱设置</div>
         </div>
 
         <!-- 选项卡内容 -->
         <div class="tab-content">
             <!-- 角色管理选项卡 -->
-            <div class="tab-pane active" id="role-tab">
+            <div class="tab-pane " id="role-tab">
                 <div class="card">
                     <div class="card-header">
                         <span>角色列表</span>
@@ -99,4 +99,148 @@
                                     <td>2023-01-15</td>
                                     <td class="action-buttons">
                                         <button class="btn btn-primary btn-sm">编辑</button>
-                                        <button class="btn btn-danger btn-
+                                        <button class="btn btn-danger btn-sm">删除</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 邮件模版设置选项卡 -->
+            <div class="tab-pane" id="module-tab">
+                <div class="card">
+                    <div class="card-header">
+                        <span>邮件模版列表</span>
+                        <button class="btn btn-primary btn-sm" id="addTemplateBtn">添加模版</button>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>业务类型</th>
+                                    <th>模版名称</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>劳务费</td>
+                                    <td>劳务费邮件模版</td>
+                                    <td class="action-buttons">
+                                        <button class="btn btn-info btn-sm">查看</button>
+                                        <button class="btn btn-primary btn-sm">编辑</button>
+                                        <button class="btn btn-danger btn-sm">删除</button>
+                                        <button class="btn btn-warning btn-sm">停用</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>合同开票</td>
+                                    <td>邮件通知模版</td>
+                                    <td class="action-buttons">
+                                        <button class="btn btn-info btn-sm">查看</button>
+                                        <button class="btn btn-primary btn-sm">编辑</button>
+                                        <button class="btn btn-danger btn-sm">删除</button>
+                                        <button class="btn btn-success btn-sm">启用</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>项目结算</td>
+                                    <td>项目结算邮件模版</td>
+                                    <td class="action-buttons">
+                                        <button class="btn btn-info btn-sm">查看</button>
+                                        <button class="btn btn-primary btn-sm">编辑</button>
+                                        <button class="btn btn-danger btn-sm">删除</button>
+                                        <button class="btn btn-warning btn-sm">停用</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>项目付款</td>
+                                    <td>项目付款模版/td>
+                                    <td class="action-buttons">
+                                        <button class="btn btn-info btn-sm">查看</button>
+                                        <button class="btn btn-primary btn-sm">编辑</button>
+                                        <button class="btn btn-danger btn-sm">删除</button>
+                                        <button class="btn btn-success btn-sm">启用</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 邮箱设置选项卡 -->
+            <div class="tab-pane active" id="email-tab">
+                <div class="card">
+                    <div class="card-header">
+                        <span>邮箱配置列表</span>
+                        <button class="btn btn-primary btn-sm" id="addEmailConfigBtn">添加配置</button>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>业务类型</th>
+                                    <th>邮箱地址</th>
+                                    <th>SMTP服务器</th>
+                                    <th>端口</th>
+                                    <th>状态</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>劳务费</th>
+                                    <td>system@example.com</td>
+                                    <td>smtp.example.com</td>
+                                    <td>465</td>
+                                    <td><span class="badge badge-success">已启用</span></td>
+                                    <td class="action-buttons">
+                                        <button class="btn btn-primary btn-sm">编辑</button>
+                                        <button class="btn btn-danger btn-sm">删除</button>
+                                        <button class="btn btn-warning btn-sm">停用</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>合同开票</th>
+                                    <td>system@example.com</td>
+                                    <td>smtp.example.com</td>
+                                    <td>465</td>
+                                    <td><span class="badge badge-success">已启用</span></td>
+                                    <td class="action-buttons">
+                                        <button class="btn btn-primary btn-sm">编辑</button>
+                                        <button class="btn btn-danger btn-sm">删除</button>
+                                        <button class="btn btn-warning btn-sm">停用</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>项目结算</th>
+                                    <td>system@example.com</td>
+                                    <td>smtp.example.com</td>
+                                    <td>465</td>
+                                    <td><span class="badge badge-success">已启用</span></td>
+                                    <td class="action-buttons">
+                                        <button class="btn btn-primary btn-sm">编辑</button>
+                                        <button class="btn btn-danger btn-sm">删除</button>
+                                        <button class="btn btn-warning btn-sm">停用</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>项目付款</th>
+                                    <td>system@example.com</td>
+                                    <td>smtp.example.com</td>
+                                    <td>465</td>
+                                    <td><span class="badge badge-success">已启用</span></td>
+                                    <td class="action-buttons">
+                                        <button class="btn btn-primary btn-sm">编辑</button>
+                                        <button class="btn btn-danger btn-sm">删除</button>
+                                        <button class="btn btn-warning btn-sm">停用</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>

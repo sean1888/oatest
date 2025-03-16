@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OA系统 - 劳务费列表</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/labor-fee.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <div class="navbar">
+        <a href="main.html" class="navbar-brand">企业办公自动化系统</a>
+        <div class="navbar-menu">
+            <div class="navbar-item notification">
+                <span class="notification-icon">📣</span>
+                <span class="notification-badge">3</span>
+            </div>
+            <div class="navbar-item user-info">
+                <span class="user-name">管理员</span>
+                <div class="user-dropdown">
+                    <a href="personal.html">个人中心</a>
+                    <a href="index.html">退出登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 侧边栏菜单 -->
+    <div class="sidebar">
+        <div class="sidebar-menu">
+            <div class="sidebar-item">首页</div>
+            <div class="sidebar-item">待办任务</div>
+            <div class="sidebar-item">已办任务</div>
+            <div class="sidebar-item">通知公告</div>
+            <div class="sidebar-item">个人中心</div>
+            <div class="sidebar-item">用户管理</div>
+            <div class="sidebar-item">系统管理</div>
+            <div class="sidebar-item active">劳务费列表</div>
+        </div>
+    </div>
+
+    <!-- 主内容区域 -->
+    <div class="main-content">
+        <!-- 页面标题 -->
+        <div class="page-header">
+            <h2>劳务费列表</h2>
+            <p>管理项目劳务费信息</p>
+        </div>
+
+        <!-- 操作栏 -->
+        <div class="action-bar">
+            <div class="search-box">
+                <input type="text" class="form-control" placeholder="搜索单据编号/项目名称/合同名称">
+                <button class="btn btn-primary">搜索</button>
+            </div>
+            <button class="btn btn-primary" id="createLaborFeeBtn">新建劳务费</button>
+        </div>
+
+        <!-- 劳务费列表卡片 -->
+        <div class="card labor-fee-card">
+            <div class="card-header">劳务费列表</div>
+            <div class="card-body">
+                <table class="table labor-fee-table">
+                    <thead>
+                        <tr>
+                            <th>单据编号</th>
+                            <th>经办人</th>
+                            <th>经办日期</th>
+                            <th>项目编码</th>
+                            <th>项目名称</th>
+                            <th>合同编码</th>
+                            <th>合同名称</th>
+                            <th>对方单位编码</th>
+                            <th>对方单位名称</th>
+                            <th>对方单位E-mail</th>
+                            <th>电话</th>
+                            <th>实付金额合计</th>
+                            <th>零元账</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LWF20230001</td>
+                            <td>张三</td>
+                            <td>2023-03-15</td>
+                            <td>PRJ001</td>
+                            <td>办公系统开发项目</td>
+                            <td>HT20230001</td>
+                            <td>软件开发合同</td>
+                            <td>GS001</td>
+                            <td>某某科技有限公司</td>
+                            <td>contact@example.com</td>
+                            <td>13800138000</td>
+                            <td>¥50,000.00</td>
+                            <td>否</td>
+                            <td class="action-buttons">
+                                <button class="btn btn-primary btn-sm">查看</button>
+                                <button class="btn btn-warning btn-sm">编辑</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LWF20230002</td>
+                            <td>李四</td>
+                            <td>2023-04-20</td>
+                            <td>PRJ002</td>
+                            <td>移动应用开发项目</td>
+                            <td>HT20230002</td>
+                            <td>移动应用开发合同</td>
+                            <td>GS002</td>
+                            <td>某某移动科技有限公司</td>
+                            <td>mobile@example.com</td>
+                            <td>13900139000</td>
+                            <td>¥30,000.00</td>
+                            <td>否</td>
+                            <td class="action-buttons">
+                                <button class="btn btn-primary btn-sm">查看</button>
+                                <button class="btn btn-warning btn-sm">编辑</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 分页控件 -->
+        <div class="pagination">
+            <div class="page-info">显示 1-2 条，共 2 条</div>
+            <div class="page-buttons">
+                <button class="btn page-btn" disabled>上一页</button>
+                <button class="btn page-btn active">1</button>
+                <button class="btn page-btn" disabled>下一页</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/labor-fee.js"></script>
+</body>
+</html>

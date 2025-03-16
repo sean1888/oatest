@@ -1,0 +1,82 @@
+/* 劳务费列表页面样式 */
+
+/* 操作栏样式 */
+.action-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* 搜索框样式 */
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+.search-box .form-control {
+    width: 300px;
+}
+
+/* 劳务费列表卡片样式 */
+.labor-fee-card {
+    overflow-x: auto; /* 允许表格在小屏幕上水平滚动 */
+}
+
+/* 劳务费表格样式 */
+.labor-fee-table {
+    min-width: 1200px; /* 确保表格在小屏幕上不会过度压缩 */
+}
+
+/* 表格中的金额样式 */
+.labor-fee-table td:nth-child(12) {
+    text-align: right;
+    font-weight: 500;
+}
+
+/* 表格中的邮箱和电话样式 */
+.labor-fee-table td:nth-child(10),
+.labor-fee-table td:nth-child(11) {
+    color: #1890ff;
+}
+
+/* 操作按钮区域样式 */
+.action-buttons {
+    white-space: nowrap;
+}
+
+/* 表单样式 */
+.labor-fee-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+/* 附件上传区域样式 */
+.attachment-area {
+    border: 1px dashed #d9d9d9;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fafafa;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.attachment-area:hover {
+    border-color: #1890ff;
+}
+
+.attachment-icon {
+    font-size: 24px;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.attachment-text {
+    color: #666;
+}
